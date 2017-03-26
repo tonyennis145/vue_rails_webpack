@@ -8,7 +8,7 @@
     .fl.w-100
       %ul
         %li{"v-for" : "record in commits"}
-          .container {{ record.html_url }}
+          %div {{record.commit.message}} - {{ record.author.login }}
 
 </template>
 
@@ -39,13 +39,11 @@ module.exports =
 
   }
 
-
 </script>
-
 
 <style lang="sass">
 
-p 
-  font-size: 4em
+li
+  font-size: 1em
 
 </style>
