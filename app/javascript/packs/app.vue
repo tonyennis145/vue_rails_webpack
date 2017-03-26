@@ -3,12 +3,12 @@
 
 #container
   .mw9.center.ph3-ns.pt6
-    .fl.w-100 {{ message }}
+    %h1.fl.w-100 {{ message }}
     
     .fl.w-100
       %ul
-        %li{"v-for" : "record in commits"}
-          %div {{record.commit.message}} - {{ record.author.login }}
+        %li.blue{"v-for" : "record in commits"}
+          %div {{record.commit.message}} - {{record.author.login}}
 
 </template>
 
@@ -21,7 +21,7 @@ module.exports =
 
   data: ->
     { 
-      message: 'Hello World' 
+      message: 'Github commits' 
       commits: []
     }
   
@@ -44,6 +44,6 @@ module.exports =
 <style lang="sass">
 
 li
-  font-size: 1em
+  font-size: 3em
 
 </style>

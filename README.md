@@ -1,7 +1,5 @@
 # How It Works
-Super fast dev workflow with self contained vue components with hot module replacement. 
-
-
+Super fast dev workflow with self contained vue components + hot module replacement. 
 
 # Setup
 
