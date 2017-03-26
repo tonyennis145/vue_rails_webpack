@@ -8,9 +8,8 @@ import Vue from 'vue/dist/vue.esm'
 import App from './app.vue'
 
 document.addEventListener('DOMContentLoaded', () => {
-  document.body.appendChild(document.createElement('hello'))
   const app = new Vue({
-    el: 'hello',
+    el: '#app',
     template: '<App/>',
     components: { App }
   })
