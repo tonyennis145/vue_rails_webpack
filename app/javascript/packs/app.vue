@@ -8,7 +8,7 @@
 module.exports = {
   data: function () {
     return {
-      message: "Hillo Vue!"
+      message: "Hello World!"
     }
   }
 }
@@ -16,7 +16,6 @@ module.exports = {
 
 <style scoped>
 p {
-  font-size: 3em;
-  text-align: center;
+  font-size: 8em;
 }
 </style>
