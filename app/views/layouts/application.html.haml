@@ -1,0 +1,9 @@
+!!!
+%html
+  %head
+    =render :partial => "components/head"
+
+  %body{:class => "c-#{params[:controller]} a-#{params[:action]}"}
+    =yield
+
+    = javascript_pack_tag 'application'
