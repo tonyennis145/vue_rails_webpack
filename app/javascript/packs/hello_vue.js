@@ -7,12 +7,13 @@
 import Vue from 'vue/dist/vue.esm'
 import App from './app.vue'
 
+// var VueResource = require('vue-resource');
+// Vue.use(VueResource);
+
 document.addEventListener('DOMContentLoaded', () => {
   const app = new Vue({
     el: '#app',
     template: '<App/>',
     components: { App }
   })
-
-  console.log(app)
 })
