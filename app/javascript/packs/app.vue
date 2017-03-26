@@ -4,11 +4,11 @@
 #container
   .mw9.center.ph3-ns.pt6
     .fl.w-100 {{ message }}
-
-    %ul
-      %li{"v-for" : "record in commits"}
-        .containert {{ record.html_url }}
-      kdjflkj
+    
+    .fl.w-100
+      %ul
+        %li{"v-for" : "record in commits"}
+          .container {{ record.html_url }}
 
 </template>
 
