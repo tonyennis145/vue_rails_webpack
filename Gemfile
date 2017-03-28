@@ -65,3 +65,4 @@ gem 'cells-rails'
 gem 'vuejs-rails'
 gem 'tachyons-rails'
 gem 'webpacker', github: 'rails/webpacker'
+gem "disposable", ">= 0.3.2"

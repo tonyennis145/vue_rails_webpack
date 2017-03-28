@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/rails/webpacker.git
-  revision: 3c488f9f4022735a37093a1c1718eb9a7d720102
+  revision: c4d912dbee884c192a436261189f806e26f7bf95
   specs:
     webpacker (1.1)
       activesupport (>= 4.2)
@@ -243,6 +243,7 @@ DEPENDENCIES
   cells-haml
   cells-rails
   coffee-rails (~> 4.2)
+  disposable (>= 0.3.2)
   figaro
   haml-rails
   httparty
