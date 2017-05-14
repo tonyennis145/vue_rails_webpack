@@ -1,0 +1,83 @@
+{
+  "name": "tonyennis145/vue_rails_webpack",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "Vue webpack rails",
+  "branch": "master",
+  "style": {
+    "name": "Swiss",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/SwissHeader",
+      "article": "article/SwissArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "\"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "heading": {
+      "fontWeight": 700,
+      "letterSpacing": "-0.01em"
+    },
+    "layout": {
+      "fluid": true
+    },
+    "colors": {
+      "text": "#000",
+      "background": "#fff",
+      "primary": "#05a",
+      "secondary": "#444",
+      "highlight": "#f30",
+      "border": "#ccc",
+      "muted": "#eee"
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "https://github.com/tonyennis145/vue_rails_webpack",
+          "text": "GitHub"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "vue_rails_webpack",
+      "subhead": "Boilerplate rails 5 app w/ trailblazer, tachyons, vue + vue-loader + webpack configured to work with hot reloading",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "vue_rails_webpack: Boilerplate rails 5 app w/ trailblazer, tachyons, vue + vue-loader + webpack configured to work with hot reloading",
+          "url": null
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "tonyennis145",
+          "repo": "vue_rails_webpack"
+        }
+      ]
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "<h1>How It Works</h1>\n<p>Super fast dev workflow with self contained vue components + hot module replacement. </p>\n<p><img src=\"https://github.com/tonyennis145/vue_rails_webpack/blob/master/app/assets/images/vue-webpack.gif?raw=true\"></p>\n<h1>Setup</h1>\n<ul>\n<li><code>bundle install</code></li>\n<li><code>npm install</code></li>\n<li><code>./bin/webpack-dev-server</code></li>\n</ul>\n<h1>What I Did</h1>\n<p>Not required reading but useful for context. This project combines code from:</p>\n<ul>\n<li><a href=\"https://github.com/rails/webpacker#ready-for-vue\">rails webpacker vue setup</a>, and</li>\n<li><a href=\"https://github.com/vuejs/vue-loader\">vue loader project setup</a>.</li>\n</ul>\n<p>with a bit of tinkering to get them to play nice together.</p>\n<h2>1. Basic rails webpacker + Vue setup</h2>\n<p>From <a href=\"https://github.com/rails/webpacker#ready-for-vue\">here</a>:</p>\n<ol>\n<li><code>rails webpacker:install</code></li>\n<li><code>rails webpacker:install:vue</code></li>\n</ol>\n<h2>2. Get vue-loader set up in a non-rails project, including hot reloading</h2>\n<p>This created a separate non-rails project containing some of the config files we need.</p>\n<p>From <a href=\"https://github.com/vuejs/vue-loader\">here</a>:</p>\n<ul>\n<li><code>npm install -g vue-cli</code></li>\n<li><code>vue init webpack-simple hello</code></li>\n<li><code>cd hello</code></li>\n<li><code>npm install</code></li>\n</ul>\n<h2>3. Copy config from project generated at step 2</h2>\n<ul>\n<li>Copied the <code>rules</code> section from <code>webpack.config.js:12</code> to <code>shared.js</code> in rails app.</li>\n<li>Added the --hot flag to <code>/bin/webpack-dev-server:31</code>.</li>\n<li>Added <code>publicPath: &apos;http://localhost:8080/&apos;</code> to <code>shared.js:26</code> to fix a compilation bug.</li>\n</ul>\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/tonyennis145/vue_rails_webpack",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/tonyennis145",
+          "text": "tonyennis145"
+        }
+      ]
+    }
+  ]
+}
