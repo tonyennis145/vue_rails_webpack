@@ -7,6 +7,9 @@ const { devServer, publicPath, paths } = require('./configuration.js')
 
 module.exports = merge(devConfig, {
   devServer: {
+  	headers: {
+        'Access-Control-Allow-Origin': '*'
+    },
     host: devServer.host,
     port: devServer.port,
     compress: true,
