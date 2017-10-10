@@ -3,8 +3,9 @@ Rails.application.routes.draw do
   root "site#index"
 
   namespace :api do
+ 	resources :docs, only: :index
     namespace :v1, as: 'v1' do
-      resources :financial_transactions
+      resources :resources
     end
   end
 
