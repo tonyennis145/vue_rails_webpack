@@ -1,3 +1,5 @@
+ruby '2.2.6'
+
 source 'https://rubygems.org'
 
 git_source(:github) do |repo_name|
@@ -53,24 +55,14 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise'
-gem 'grape-swagger'
-gem 'grape-swagger-rails'
-gem 'grape'
-gem 'roar'
-gem 'multi_json'
-gem 'grape-roar'
-
 gem 'haml-rails'
 gem 'figaro'
 gem 'httparty'
 gem 'redcarpet'
 gem 'pg'
-gem 'trailblazer'
-gem 'trailblazer-rails'
-gem 'trailblazer-cells'
-gem 'cells-haml'
-gem 'cells-rails'
 gem 'vuejs-rails'
 gem 'tachyons-rails'
+gem 'semantic-ui-sass', git: 'https://github.com/doabit/semantic-ui-sass.git'
 gem 'webpacker', github: 'rails/webpacker'
-gem "disposable", ">= 0.3.2"
+
+gem 'swagger-blocks'
